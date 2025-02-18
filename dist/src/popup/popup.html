@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <title>SmartMerge Screenshot</title>
+</head>
+<body>
+  <div class="container">
+    <h1>SmartMerge Screenshot</h1>
+
+    <div class="capture-buttons">
+      <button id="fullPage" class="btn">
+        <span class="icon">📄</span>
+        Full Page
+      </button>
+      <button id="viewport" class="btn">
+        <span class="icon">🖼️</span>
+        Viewport
+      </button>
+      <button id="element" class="btn">
+        <span class="icon">🎯</span>
+        Select Element
+      </button>
+      <button id="area" class="btn">
+        <span class="icon">✂️</span>
+        Select Area
+      </button>
+    </div>
+
+    <div class="screenshots-container">
+      <h2>Recent Screenshots</h2>
+      <div id="screenshotsList" class="screenshots-list">
+        <!-- Screenshots will be added here dynamically -->
+      </div>
+    </div>
+
+    <div class="merge-section">
+      <button id="mergeSelected" class="btn merge-btn" disabled>
+        <span class="icon">🔄</span>
+        Merge Selected
+      </button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
